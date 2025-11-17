@@ -134,14 +134,7 @@ High recall is prioritized because:
 - **Business value**: Capturing 78% of potential customers is more valuable than 85% accuracy that misses most bookings
 
 ### Top Predictive Features
-
-```
-1. origin_popularity          19.25%  ← Geographic market strength
-2. booking_origin_Australia   12.62%  ← Australian customers convert well
-3. booking_origin_Malaysia     9.99%  ← Malaysian customers convert well
-4. flight_duration             4.79%  ← Flight length matters
-5. route_popularity            4.46%  ← Popular routes convert better
-```
+<img width="1226" height="781" alt="Image" src="https://github.com/user-attachments/assets/d87b71a4-578f-4f64-8436-e7902da406df" />
 
 **Key Insight:** Geographic origin is the strongest predictor - certain markets convert significantly better than others!
 
