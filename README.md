@@ -114,7 +114,7 @@ model = RandomForestClassifier(
 
 ---
 
-## 📈 Results
+## Results
 
 ### Model Performance
 
@@ -122,9 +122,9 @@ model = RandomForestClassifier(
 |--------|-------|----------------|
 | **Accuracy** | 66.70% | Overall correct predictions |
 | **Precision** | 27.96% | When predicting booking, correct 28% of time |
-| **Recall** | **77.74%** | **Catches 78% of actual bookings** ✅ |
+| **Recall** | **77.74%** | **Catches 78% of actual bookings** |
 | **F1-Score** | 41.12% | Balance of precision and recall |
-| **ROC-AUC** | **76.61%** | **Strong discriminative ability** ✅ |
+| **ROC-AUC** | **76.61%** | **Strong discriminative ability** |
 
 ### Why Recall > Accuracy?
 
@@ -144,79 +144,6 @@ High recall is prioritized because:
 ```
 
 **Key Insight:** Geographic origin is the strongest predictor - certain markets convert significantly better than others!
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-```bash
-Python 3.8+
-pip install pandas numpy scikit-learn matplotlib seaborn
-```
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/ba-booking-prediction.git
-cd ba-booking-prediction
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Or install individually
-pip install pandas numpy scikit-learn matplotlib seaborn jupyter
-```
-
-### Usage
-
-1. **Open Jupyter Notebook**
-```bash
-jupyter notebook Getting_Started.ipynb
-```
-
-2. **Load your data**
-```python
-import pandas as pd
-df = pd.read_csv('customer_booking.csv', encoding='ISO-8859-1')
-```
-
-3. **Run the pipeline**
-   - Data Exploration
-   - Feature Engineering
-   - Model Training
-   - Evaluation
-
-4. **Make predictions on new customers**
-```python
-# Load trained model
-new_customer = pd.DataFrame({...})  # Customer features
-prediction = model.predict(new_customer)
-probability = model.predict_proba(new_customer)[:, 1]
-```
-
----
-
-## 📁 Project Structure
-
-```
-ba-booking-prediction/
-│
-├── 📓 Getting_Started.ipynb     # Main analysis notebook
-├── 📄 README.md                  # Project documentation
-├── 📊 customer_booking.csv       # Dataset (not included)
-├── 📋 requirements.txt           # Python dependencies
-│
-├── 📁 outputs/
-│   ├── model.pkl                 # Trained model
-│   ├── feature_importance.png    # Visualization
-│   └── confusion_matrix.png      # Model evaluation
-│
-└── 📁 presentation/
-    └── BA_Booking_Prediction.pptx  # Executive summary
-```
 
 ---
 
@@ -262,29 +189,6 @@ ba-booking-prediction/
 - Focus sales team on high-probability leads
 - Reduce spend on low-probability segments
 - Shift budget to proven markets
-
----
-
-## 🔮 Future Improvements
-
-### Data Enhancements
-- [ ] Add pricing information for price sensitivity analysis
-- [ ] Include customer loyalty/history data
-- [ ] Capture seasonal and holiday patterns
-- [ ] Add competitor pricing data
-
-### Model Improvements
-- [ ] Try XGBoost/LightGBM for potentially higher accuracy
-- [ ] Implement SMOTE for better class balance handling
-- [ ] Hyperparameter tuning with GridSearchCV
-- [ ] Ensemble methods combining multiple algorithms
-
-### Deployment
-- [ ] Build REST API for real-time predictions
-- [ ] Create dashboard for monitoring
-- [ ] A/B testing framework for campaigns
-- [ ] Automated retraining pipeline
-
 ---
 
 ## 🛠️ Technical Stack
@@ -304,53 +208,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 👥 Authors
-
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
-
----
-
-## 🙏 Acknowledgments
+## Acknowledgments:
 
 - British Airways for the dataset
 - Scikit-learn documentation and community
 - Forage for the virtual internship program
-
----
-
-## 📧 Contact
-
-For questions or feedback:
-- Email: your.email@example.com
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- GitHub Issues: [Create an issue](https://github.com/yourusername/ba-booking-prediction/issues)
-
----
-
-## 📚 References
-
-- [Scikit-learn Documentation](https://scikit-learn.org/stable/)
-- [Random Forest Algorithm](https://en.wikipedia.org/wiki/Random_forest)
-- [Handling Imbalanced Datasets](https://imbalanced-learn.org/)
-- [Feature Engineering Best Practices](https://www.kaggle.com/learn/feature-engineering)
-
----
-
-**⭐ If you found this project helpful, please give it a star!**
-
-```
-🎯 Model catches 78% of potential bookings
-📊 Geographic origin is #1 predictor  
-💰 Enables proactive customer acquisition
-🚀 Ready for production deployment
-```
