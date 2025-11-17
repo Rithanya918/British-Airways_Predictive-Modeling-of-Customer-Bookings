@@ -1,11 +1,6 @@
 
 # British Airways Customer Booking Prediction
 
-![Python](https://img.shields.io/badge/Python-3.12-blue.svg)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3-orange.svg)
-![Pandas](https://img.shields.io/badge/Pandas-2.0-green.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-
 ## Project Overview
 
 A machine learning solution that predicts customer flight booking completion for British Airways. The model identifies **78% of customers who will complete bookings**, enabling proactive marketing strategies and improved customer acquisition.
@@ -140,19 +135,14 @@ High recall is prioritized because:
 
 ---
 
-## 📊 Key Visualizations
+##  Key Visualizations
 
 ### Class Distribution
-![Class Distribution](outputs/class_distribution.png)
+<img width="1095" height="495" alt="Image" src="https://github.com/user-attachments/assets/5b550826-271e-4638-90b7-fb6ce7aa340a" />
+
 - 85% customers don't complete booking
 - 15% customers complete booking
 - Imbalance ratio: 5.69:1
-
-### Feature Importance
-![Feature Importance](outputs/feature_importance.png)
-- Geographic origin dominates predictions
-- Australia and Malaysia are key markets
-- Flight characteristics matter significantly
 
 ### Confusion Matrix
 <img width="1355" height="494" alt="Image" src="https://github.com/user-attachments/assets/a89878b6-54e3-462c-aadf-41caf228e5c3" />
@@ -162,7 +152,7 @@ High recall is prioritized because:
 
 ---
 
-## 💼 Business Recommendations
+## Business Recommendations
 
 ### 1. **Target High-Converting Markets**
 - Increase marketing investment in **Australia** and **Malaysia**
@@ -185,7 +175,7 @@ High recall is prioritized because:
 - Shift budget to proven markets
 ---
 
-## 🛠️ Technical Stack
+##  Technical Stack
 
 - **Language:** Python 3.12
 - **Environment:** Google Colab (GPU-enabled)
@@ -196,7 +186,7 @@ High recall is prioritized because:
 
 ---
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
