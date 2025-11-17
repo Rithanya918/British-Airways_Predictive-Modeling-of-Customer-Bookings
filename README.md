@@ -155,7 +155,8 @@ High recall is prioritized because:
 - Flight characteristics matter significantly
 
 ### Confusion Matrix
-![Confusion Matrix](outputs/confusion_matrix.png)
+<img width="1355" height="494" alt="Image" src="https://github.com/user-attachments/assets/a89878b6-54e3-462c-aadf-41caf228e5c3" />
+
 - True Positives: ~1,163 bookings correctly identified
 - Successfully captures 77.7% of revenue opportunities
 
